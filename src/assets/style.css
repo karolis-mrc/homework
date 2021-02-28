@@ -1,0 +1,144 @@
+html {
+	-webkit-overflow-scrolling: touch;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+}
+
+#app {
+	background-color: skyblue;
+}
+
+.wrapper {
+	max-width: 1400px;
+	margin: auto;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+.content {
+	background-color: white;
+	height: 100vh;
+	width: 100%;
+}
+
+.module {
+	height: 6.25rem;
+	background-image: linear-gradient(to right, rgb(255, 136, 0) , red);
+}
+
+form {
+	width: 100%;
+}
+
+#module_input {
+	background-color :rgb(255, 255, 255, 0.3);
+	padding-left: 4.375rem;
+	height: 3.75rem;
+	width: 100%;
+	border: 0;
+	outline: none;
+	color: white;
+	font-weight: bold;
+}
+
+#module_input::placeholder { 
+	font-weight: bold;
+	color: rgb(255, 255, 255, 1.0);
+	opacity: 1; 
+}
+
+#main_input {
+	position: absolute;
+	top: -0.5625rem;
+	left: 4.125rem;
+	width: 100%;
+	height: 4.375rem;
+	border: 0;
+	border-bottom: 1px solid lightgrey;
+	z-index: 5;
+	outline: none;
+	padding-left: 4.375rem;
+	padding-bottom: 1.125rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+.main-movie-icon {
+	position: absolute;
+	top: .8125rem;
+	left: 5rem;
+	background: url(../assets/icons/movie.svg);
+	background-size: 1.875rem 1.5625rem;
+	width: 1.875rem;
+	height: 1.5625rem;
+	z-index: 6;
+}
+
+.main-input-label {
+	position: absolute;
+	top: 1.875rem;
+	left: 8.375rem;
+	z-index: 6;
+	color: grey;
+}
+
+#suggestion_list {
+	position: absolute;
+	top: 3.75rem;
+	left: 4.125rem;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: grey;
+	line-height: 1.2;
+}
+
+.suggestion_item {
+	padding-left: 4.25rem;
+	padding-top: .625rem;
+	padding-bottom: .625rem;
+}
+
+.suggestion-name {
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: black;
+}
+
+button {
+	width: 3.75rem;
+	height: 3.75rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.movie-icon {
+	position: absolute;
+	top: .625rem;
+	left: .625rem;
+	background: url(../assets/icons/movie.svg);
+	background-size: 3.125rem 2.5rem;
+	width: 3.125rem;
+	height: 2.5rem;
+	filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(179deg) brightness(104%) contrast(108%);
+}
+
+.search-icon {
+	position: absolute;
+	top: .625rem;
+	left: .625rem;
+	background: url(../assets/icons/search.svg);
+	background-size: 2.5rem 2.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	filter: invert(27%) sepia(70%) saturate(4727%) hue-rotate(358deg) brightness(99%) contrast(93%);
+}
